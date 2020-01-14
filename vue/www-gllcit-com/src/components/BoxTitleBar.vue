@@ -23,6 +23,12 @@
   border-bottom-style: solid;
   text-align: right;
 }
+
+button {
+  border-width: 0px;
+  border-style: none;
+  background-color: transparent;
+}
 </style>
 
 <template>
@@ -31,10 +37,11 @@
       <tr class="box-row">
         <td class="box-title">{{title}}</td>
         <td class="box-more">
-          <a href="#">
-            more
+          <button @click="onClickMore">
+            <!-- more -->
+            详细
             <i class="el-icon-caret-right" />
-          </a>
+          </button>
         </td>
       </tr>
     </table>
@@ -46,6 +53,12 @@ export default {
   name: "BoxTitleBar",
   props: {
     title: String
+  },
+
+  methods: {
+    onClickMore() {
+      this.$emit("openDetail");
+    }
   }
 };
 </script>

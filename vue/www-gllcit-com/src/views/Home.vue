@@ -23,7 +23,7 @@
         <CompanyInfoBox />
       </el-col>
       <el-col class="info-box" :span="12" :xs="24" :sm="12" :md="12">
-        <ItNewsBox />
+        <BusinessInfoBox />
       </el-col>
     </el-row>
 
@@ -39,13 +39,14 @@
 
 <script>
 import CaseInfoBox from "./../components/home/CaseInfoBox";
+import BusinessInfoBox from "./../components/home/BusinessInfoBox";
 import CompanyInfoBox from "./../components/home/CompanyInfoBox";
 import ItNewsBox from "./../components/home/ItNewsBox";
 
 export default {
   name: "home",
 
-  components: { CaseInfoBox, CompanyInfoBox, ItNewsBox },
+  components: { BusinessInfoBox, CaseInfoBox, CompanyInfoBox, ItNewsBox },
 
   data() {
     return {};

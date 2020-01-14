@@ -12,22 +12,31 @@
 
 <template>
   <div class="hello">
-    <box-title-bar :title="title" />
+    <box-title-bar :title="title" @openDetail="onOpenDetail" />
 
     <div>
       <span class="case">
-        <a href="#">
-          <img class="case-image" src="https://release.bitwormhole.com/static/gllcit.com/case1.png" />
+        <a @click="onOpenDetail">
+          <img
+            class="case-image"
+            src="https://release.bitwormhole.com/static/gllcit.com/projects/kyxmglxt.png"
+          />
         </a>
       </span>
       <span class="case">
-        <a href="#">
-          <img class="case-image" src="https://release.bitwormhole.com/static/gllcit.com/case2.png" />
+        <a @click="onOpenDetail">
+          <img
+            class="case-image"
+            src="https://release.bitwormhole.com/static/gllcit.com/projects/wjzlgxxt.png"
+          />
         </a>
       </span>
       <span class="case">
-        <a href="#">
-          <img class="case-image" src="https://release.bitwormhole.com/static/gllcit.com/case3.png" />
+        <a @click="onOpenDetail">
+          <img
+            class="case-image"
+            src="https://release.bitwormhole.com/static/gllcit.com/projects/xtbgxt.png"
+          />
         </a>
       </span>
     </div>
@@ -42,6 +51,12 @@ export default {
     return {
       title: "成功案例"
     };
+  },
+
+  methods: {
+    onOpenDetail() {
+      this.$router.push("/projects");
+    }
   }
 };
 </script>

@@ -19,6 +19,7 @@
 }
 
 .box1 {
+  margin-top: 30px;
   text-align: center;
   padding: 40px;
 }
@@ -29,8 +30,15 @@
 }
 
 .box3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
   padding: 20px;
+}
+
+.btn-about {
+  margin: 20px;
+  padding: 5px;
 }
 </style>
 
@@ -56,7 +64,9 @@
           <div>0773-2881958</div>
           <div>桂林市七星区信息产业园</div>
           <div>
-            <a href="#">联系我们</a>
+            <button class="btn-about" @click="onClickAbout">
+              <i class="el-icon-phone" /> 联系我们
+            </button>
           </div>
         </el-col>
         <el-col class="box3" :span="7" :xs="24" :sm="24" :md="8">
@@ -78,6 +88,12 @@ export default {
   name: "PageFooter",
   props: {
     msg: String
+  },
+
+  methods: {
+    onClickAbout() {
+      this.$router.push("/about");
+    }
   }
 };
 </script>

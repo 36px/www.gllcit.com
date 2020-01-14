@@ -19,13 +19,13 @@
     <div>
       <table>
         <tr>
-          <td>
+          <td @click="onClickLogo">
             <img
               class="logo-image"
               src="https://release.bitwormhole.com/static/gllcit.com/logo.png"
             />
           </td>
-          <td>
+          <td @click="onClickLogo">
             <img
               class="logo-text"
               src="https://release.bitwormhole.com/static/gllcit.com/text-lckj.svg"
@@ -42,14 +42,17 @@
         background-color="#27aad6"
         text-color="#ffffff"
         active-text-color="#ffff00"
+        @select="onSelectItem"
       >
-        <el-menu-item index="1">首页</el-menu-item>
-        <el-menu-item index="2">公司简介</el-menu-item>
-        <el-menu-item index="3">行业新闻</el-menu-item>
-        <el-menu-item index="4">成功案例</el-menu-item>
-        <el-menu-item index="5">关于</el-menu-item>
+        <el-menu-item index="home">首页</el-menu-item>
+        <el-menu-item index="company">公司简介</el-menu-item>
+        <el-menu-item index="business">业务介绍</el-menu-item>
+        <el-menu-item index="projects">成功案例</el-menu-item>
+        <el-menu-item index="about">联系我们</el-menu-item>
       </el-menu>
     </div>
+
+    <!-- div>{{output}}</div -->
   </div>
 </template>
 
@@ -58,6 +61,22 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String
+  },
+
+  data() {
+    return {
+      output: "hello"
+    };
+  },
+
+  methods: {
+    onSelectItem(index, indexPath) {
+      this.$router.push("/" + index);
+    },
+
+    onClickLogo() {
+      this.$router.push("/");
+    }
   }
 };
 </script>
