@@ -6,6 +6,7 @@
 
 p {
   text-align: left;
+  text-indent: 2em;
 }
 </style>
 

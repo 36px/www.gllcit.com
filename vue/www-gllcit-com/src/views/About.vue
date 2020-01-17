@@ -22,20 +22,27 @@ td {
 
     <table>
       <tr>
-        <td>邮箱</td>
-        <td>user@host</td>
+        <td></td>
+        <td>桂林联潮信息技术有限公司</td>
       </tr>
+      <tr>
+        <td></td>
+        <td>Guilin Lianchao Information Technology Co., Ltd.</td>
+      </tr>
+
       <tr>
         <td>手机</td>
-        <td>666-6666-6666（沈工）134-8137-5437（徐工）</td>
+        <td>13687869811 （沈工）13481375437（徐工）</td>
       </tr>
+
       <tr>
         <td>QQ</td>
-        <td>???</td>
+        <td>120318891 （沈工） 562732822 （徐工）</td>
       </tr>
+
       <tr>
-        <td>微信</td>
-        <td>???</td>
+        <td>微信公众号</td>
+        <td>LianChaoTech</td>
       </tr>
       <tr>
         <td>网址</td>
@@ -43,7 +50,11 @@ td {
       </tr>
       <tr>
         <td>地址</td>
-        <td>桂林市七星区朝阳路信息产业园 D-08 号</td>
+        <td>桂林市七星区朝阳路国家高新区信息产业园 D-08 号</td>
+      </tr>
+      <tr>
+        <td>邮编</td>
+        <td>541004</td>
       </tr>
     </table>
   </div>

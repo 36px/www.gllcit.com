@@ -40,6 +40,11 @@
   margin: 20px;
   padding: 5px;
 }
+
+.keywords {
+  padding: 20px;
+  display: none;
+}
 </style>
 
 <template>
@@ -61,8 +66,8 @@
           </div>
         </el-col>
         <el-col class="box2" :span="10" :xs="24" :sm="24" :md="8">
-          <div>0773-2881958</div>
-          <div>桂林市七星区信息产业园</div>
+          <!-- div>0773-2881958</div -->
+          <div>桂林市七星区朝阳路国家高新区信息产业园</div>
           <div>
             <button class="btn-about" @click="onClickAbout">
               <i class="el-icon-phone" /> 联系我们
@@ -75,10 +80,11 @@
           </div>
         </el-col>
       </el-row>
+      <div class="keywords">关键字，关键字，关键字呀，关键字~</div>
     </div>
     <div class="footer-2">
       <span>Copyright(C) 2020 gllcit.com All Rights Reserved .</span>
-      <span>桂林联潮信息科技有限公司 版权所有</span>
+      <span>桂林联潮信息技术有限公司 版权所有</span>
     </div>
   </div>
 </template>
